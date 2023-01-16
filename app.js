@@ -54,11 +54,18 @@
 
 // 4
 
-// var number_one = prompt("შეიყვანეთ პირველი რიცხვი");
-// var number_two = prompt("შეიყვანეთ მეორე რიცხვი");
+var number_one = parseInt(prompt("შეიყვანეთ პირველი რიცხვი"));
+var number_two = parseInt(prompt("შეიყვანეთ მეორე რიცხვი"));
 
-var number_one = 10;
-var number_two = 15;
+// var number_one = 1;
+// var number_two = 15;
+while (number_one > number_two) {
+  number_one = number_one + number_two; // 16
+  number_two = number_one - number_two; // 1
+  number_one = number_one - number_two; //15
+}
+
+console.log(`number_one- ${number_one} and number_two ${number_two}`);
 
 for (var i = 0; i < parseInt(number_two); i++) {
   if (i > parseInt(number_one)) {
